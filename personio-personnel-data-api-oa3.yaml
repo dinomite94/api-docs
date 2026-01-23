@@ -1201,7 +1201,7 @@ paths:
       summary: List Attendances (deprecated)
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/attendance-periods"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       parameters:
@@ -1331,8 +1331,14 @@ paths:
         - BearerAuth: []
       tags:
         - Attendances
-      description: This endpoint is responsible for adding attendance data for the company employees. It is possible to add attendances for one or many employees at the same time. The payload sent on the request should be a list of attendance periods, in the form of an array containing attendance period objects.
-      summary: Create an Attendance
+      description: This endpoint is deprecated, please use v2. The endpoint is responsible for adding attendance data for the company employees. It is possible to add attendances for one or many employees at the same time. The payload sent on the request should be a list of attendance periods, in the form of an array containing attendance period objects.
+      deprecated: true
+      summary: Create an Attendance (deprecated)
+      x-papi-meta:
+        deprecation:
+          effective_from: "2026-07-28T00:00:00Z"
+          successor: "/v2/attendance-periods"
+          guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       requestBody:
         content:
           application/json:
@@ -1418,7 +1424,7 @@ paths:
       deprecated: true
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/attendance-periods/{id}"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       summary: Delete Attendance by ID (deprecated)
@@ -1490,7 +1496,7 @@ paths:
       deprecated: true
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/attendance-periods/{id}"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       summary: Update Attendance by ID (deprecated)
@@ -1566,7 +1572,7 @@ paths:
       deprecated: true
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/projects"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       summary: List Projects (deprecated)
@@ -1593,7 +1599,7 @@ paths:
       deprecated: true
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/projects"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       summary: Create a Project (deprecated)
@@ -1653,7 +1659,7 @@ paths:
       deprecated: true
       x-papi-meta:
         deprecation:
-          effective_from: "2025-01-15T00:00:00Z"
+          effective_from: "2026-07-28T00:00:00Z"
           successor: "/v2/projects/{id}"
           guide: "https://developer.personio.de/v1.0/changelog/deprecation-of-attendances-and-projects-v1-endpoints"
       summary: Delete Project by ID (deprecated)
